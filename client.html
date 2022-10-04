@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css" />
+    <title>RETO 2</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" 
+	integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/myscript.js"></script>
+	
+</head>
+<body>
+<a href="index.html">Volver al Menú Inicial</a>
+	<h1> Ciclo 3 Reto 2</h1>
+	
+	<h2> Listado de Clientes</h2>
+	<div id="resultadoCliente"> </div>
+	<p><button onclick="traerCliente()"> Consultar </button></p>
+
+<div>
+	<form action="js/myscript.js">
+		<p> Información de los clientes </p>
+		<p><input type="number" id="id" placeholder="id"></p>
+		<p><input type="text" id="name" placeholder="name"></p>
+		<p><input type="text" id="email" placeholder="email"></p>
+		<p><input type="number" id="age" placeholder="age"></p>
+	</form>
+	<button onclick="guardarCliente()"> Guardar! </button>
+	<button onclick="editarCliente()">Actualizar!</button>
+</div>
+
+<div id="listaClientes">
+
+
+</div>
+
+</body>
+</html>
